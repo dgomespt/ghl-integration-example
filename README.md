@@ -21,33 +21,33 @@ This is an example Go application demonstrating the use of OAuth2 for authentica
 
 1. Clone the repository:
 
-        ```sh
-        git clone https://github.com/dgomespt/oauth2-example-app.git
-        cd oauth2-example-app
-        ```
+```
+git clone https://github.com/dgomespt/oauth2-example-app.git
+cd oauth2-example-app
+```
 
 2. Create a `.env` file in the root directory and add your OAuth2 credentials:
 
-        ```sh
-        OAUTH2_CLIENT_ID=your_client_id
-        OAUTH2_CLIENT_SECRET=your_client_secret
-        OAUTH2_SCOPES=scope1,scope2
-        OAUTH2_BASE_URL=https://services.leadconnectorhq.com
-        ```
+```
+OAUTH2_CLIENT_ID=your_client_id
+OAUTH2_CLIENT_SECRET=your_client_secret
+OAUTH2_SCOPES=scope1,scope2
+OAUTH2_BASE_URL=https://services.leadconnectorhq.com
+```
 
 3. Install dependencies:
 
-        ```sh
-        go mod tidy
-        ```
+```
+go mod tidy
+```
 
 ## Usage
 
 1. Run the application:
 
-        ```sh
-        go run main.go
-        ```
+```sh
+go run main.go
+```
 
 2. Open your browser and navigate to `http://localhost:8080`.
 
