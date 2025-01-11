@@ -3,7 +3,6 @@ package main
 import (
 	"context"
 	"crypto/rand"
-	"dgomespt/oauth2-example-app/pkg/response"
 	"encoding/base64"
 	"encoding/json"
 	"fmt"
@@ -281,7 +280,7 @@ func handleGetContacts(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	var contactsResponse response.ContactsResponse
+	var contactsResponse ContactsResponse
 	err = json.Unmarshal(body, &contactsResponse)
 	if err != nil {
 		fmt.Println("Error unmarshalling response:", err)

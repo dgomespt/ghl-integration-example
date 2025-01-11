@@ -1,4 +1,4 @@
-package response
+package main
 
 type Contact struct {
 	ID                 string        `json:"id"`
